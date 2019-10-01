@@ -1,9 +1,7 @@
-console.log("Client side javascript file is loaded");
-
 const weatherForm = document.querySelector("form");
 const search = document.querySelector("input");
 const messageOne = document.querySelector("#message-1");
-const messageTwo = document.querySelector("#message-2");
+const messageTwo = document.querySelector("#message-2"); 
 
 weatherForm.addEventListener("submit", (e) => {
     // let the function run and not refresh the page as it is by default
@@ -22,6 +20,6 @@ weatherForm.addEventListener("submit", (e) => {
                 messageOne.textContent = data.location;
                 messageTwo.textContent = data.forecast;         
             }
-        });
+        }); 
     })
 });
